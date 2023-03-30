@@ -110,3 +110,4 @@ resource "aws_route_table_association" "infra_pub3_rta" {
   subnet_id      = aws_subnet.infra_pub3.id
   route_table_id = aws_route_table.infra_pub_rt.id
 }
+
