@@ -33,3 +33,7 @@ variable PUB_KEY {
 variable PRV_KEY {
     default = "tfkey"
 }
+
+variable MY_IP {
+    default = "106.195.39.102/32"
+}
