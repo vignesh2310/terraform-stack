@@ -7,7 +7,7 @@ resource "aws_instance" "infra_instance" {
     ami = var.AMI[var.REGION]
     instance_type = "t2.micro"
     subnet_id = aws_subnet.infra_pub1.id
-    availability_zone = var.ZONE2
+    availability_zone = var.ZONE1
     key_name = aws_key_pair.terraform_key.key_name
     vpc_security_group_ids = [aws_security_group.infra_sg.id]
     tags = {
